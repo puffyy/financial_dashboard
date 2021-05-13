@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Less Wider than 850px Screens*/
+
+@media only screen and (max-width: 1150px) {
+	html, body {
+		margin: 0;
+		padding: 0;
+		min-height: -webkit-fill-available;
+		overflow-x: hidden;
+	}
+
+    /* Main Left - Menu */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-items: flex-start;
+        height: 100%;
+        width: 40px;
+    }
+    
+    .pp, .menuText{
+        opacity: 0;
+    }
+
+    .menuItems {
+        margin: 0;
+        justify-items: flex-start;
+    }
+
+    .menu-help {
+        opacity: 1;
+    }
+
+    /* Menu Right - Current Acc*/
+    .currentAcc{
+        width: 250px;
+    }
+
+    .accPre {
+        height: 150px;
+    }
+
+    .accImg {
+        width: 100px;
+        height: 75px;
+    }
+
+    .actName {
+        font-size: 12px;
+    }
+
+    .actDate {
+        font-size: 8px;
+    }
+
+    .helpText {
+        transform: scale(0.75);
+    }    
+
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+        display: flex;
+        flex-direction:column-reverse;
+        margin: auto 50px 10px auto;
+    }
+    .currentAcc{
+        display: flex;
+        margin: auto;
+        justify-items: center;
+        width: 400px;
+        height: 100%;
+    }
+
+    .helpText {
+        opacity: 0;
+    }    
+
+    .accPre {
+        height: 200px;
+    }
+
+    .accImg {
+        width: 150px;
+        height: 75px;
+    }
+
+    .actName {
+        font-size: 14px;
+    }
+
+    .balance{
+        margin: auto;
+        padding: 0;
+        justify-items: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 635px) {
+    .currentAcc {
+        width: 100%;
+    }
+    .accPre{
+        height: 90%;
+    }
+
+    .balance{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 50px auto;
+        padding: 0;
+    }
+    .balancePre {
+        margin: 0 auto 50px auto;
+        justify-items: center;
+        padding: 0;
+        width: 80%;
+    }
+
+    .balancePro{
+        display:flex;
+        position: absolute;
+        padding: 0;
+        top: 200px;
+        left: -110px;
+        width: 80%;
+    }
+
+    .datepicker {
+        margin: 180px auto 50px auto;
+    }
+
+    .header-dash {
+        display: flex;
+        margin-left: -0.5rem;
+        padding: 0;
+        transform: scale(0.7);   
+    }
+
+    .header-nav {
+        display: flex;
+        margin-right: -1rem;
+        padding: 0; 
+        transform: scale(0.7);   
+    }
+
+    .search-bar {
+        display: flex;
+        margin-right: 0.5rem;
+        padding: 0;
+        max-width: 2rem;
+
+    }
+
+    .search {
+        width: 0;
+    }
+
+    .search-icon {
+        margin-right: -0.75rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .active {
+        opacity: 1;
+    }
+
+    .menu-slide {
+        display: flex;
+        align-items: center;
+        padding: 0.2rem;
+        height: calc(100vh - 3.5rem);
+        width: 1rem;
+        text-align: center;
+    }
+
+    .datepicker {
+        transform: scale(0.8);
+    }
+}
+
